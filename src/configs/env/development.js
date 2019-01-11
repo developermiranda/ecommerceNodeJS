@@ -13,5 +13,4 @@ module.exports = (app) => {
   app.use(morgan('dev'))
   app.use(methodOverride('_method'))
 
-
 }
