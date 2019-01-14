@@ -3,7 +3,10 @@
   background: $red-default;
 
   .img-logo {
-
+    img {
+      width: 15rem;
+      display: inline;
+    }
   }
   .social {
     padding: 1em 0;
