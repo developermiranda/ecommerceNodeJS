@@ -9,4 +9,11 @@ router.get('/', (req, res) => {
   })
 })
 
+router.get('/layout2', (req, res) => {
+  return res.render('layout/base', {
+  title: 'Teste Layout 2',
+  layout: 'layouts/main'
+  })
+})
+
 module.exports = router
