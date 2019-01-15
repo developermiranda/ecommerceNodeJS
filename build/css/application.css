@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 html {
   height: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif; }
 
 body {
   height: 100%;
   min-height: 100%;
-  background: #fefefe; }
+  background: #fefefe;
+  font-family: "Montserrat", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
 
 .btn-red-default {
   background-color: #fe2740;
@@ -17,6 +23,11 @@ body {
 
 .upper {
   text-transform: uppercase !important; }
+
+.title {
+  font-size: 1.5em; }
+  .title.bold {
+    font-weight: bold; }
 
 #header {
   position: relative;
@@ -112,3 +123,19 @@ body {
       font-size: 1.3em; }
     #footer .social .instagram {
       font-size: 1.3em; }
+
+#produtcs {
+  padding: 2em 0; }
+  #produtcs .cat .list-group {
+    border-right: 1px solid #ececec; }
+    #produtcs .cat .list-group .list-group-item {
+      border: 0;
+      border-top: 1px solid #ececec; }
+      #produtcs .cat .list-group .list-group-item:first-child {
+        border: 0; }
+      #produtcs .cat .list-group .list-group-item a {
+        color: #292929;
+        text-transform: capitalize; }
+        #produtcs .cat .list-group .list-group-item a:hover, #produtcs .cat .list-group .list-group-item a:active {
+          color: #ed283b;
+          text-decoration: none; }
