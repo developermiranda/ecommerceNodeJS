@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 router.get('/new', (req, res) => {
   const customer = new Customer()
-  
+
   return res.render('account/new', {
     title: "Account - Register",
     customer: customer,
@@ -20,8 +20,6 @@ router.get('/new', (req, res) => {
   })
 })
 
-router.post('/', (req, res) => {
-
-})
+router.post('/', require('./../services/account/create'))
 
 module.exports = router

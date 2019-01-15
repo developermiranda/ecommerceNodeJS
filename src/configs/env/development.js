@@ -4,6 +4,11 @@ const morgan =  require('morgan')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const expressEjsLayouts = require('express-ejs-layouts')
+const passport = require('passport')
+const Customer = require('./../../schemas/customer')
+const LocalStrategy = require('passport-local').Strategy
+const mongoose = require('mongoose')
+
 
 module.exports = (app) => {
   app.set('port', 9000)
@@ -20,4 +25,9 @@ module.exports = (app) => {
   app.use(morgan('dev'))
   app.use(methodOverride('_method'))
 
+  passport.use(new LocalStrategy(Customer.authenticate()))
+  passport.serializeUser(Customer.serializeUser())
+  passport.deserializeUser(Customer.deserializeUser())
+
+  mongoose.connect('mongodb://localhost:27017/dev_ecommerce')
 }
