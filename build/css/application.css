@@ -21,6 +21,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #f1f1f1;
     transition: .3s all; }
 
+.btn-red-dark-default {
+  background-color: #ed283b;
+  color: #f1f1f1; }
+  .btn-red-dark-default:hover, .btn-red-dark-default:active {
+    background-color: #fe2740;
+    color: #f1f1f1;
+    transition: .3s all; }
+
+.form-control:focus, .form-control:active, .form-control:hover {
+  box-shadow: none;
+  border-color: #ed283b; }
+
 .upper {
   text-transform: uppercase !important; }
 
@@ -29,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   font-size: 1.5em; }
+
+.subtitle {
+  padding: 0 0 1em 0;
+  display: block; }
 
 .bold {
   font-weight: bold; }
