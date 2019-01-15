@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
 html {
   height: 100%;
   min-height: 100%;
@@ -29,8 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   font-size: 1.5em; }
-  .title.bold {
-    font-weight: bold; }
+
+.bold {
+  font-weight: bold; }
 
 #header {
   position: relative;
@@ -158,3 +159,33 @@ h1, h2, h3, h4, h5, h6 {
         #produtcs .list_pro .product_item .info .price strong {
           display: block;
           padding: 1em 0; }
+
+#line {
+  position: relative;
+  width: 100%;
+  height: 8em;
+  background: #ed283b; }
+
+#steps {
+  text-align: center;
+  padding: 2em 0; }
+  #steps .title {
+    padding: 0 0 1em 0; }
+  #steps .step i {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: #f1f1f1;
+    padding: 1em; }
+    #steps .step i.one {
+      background: #ed283b; }
+    #steps .step i.two {
+      background: #02874b; }
+    #steps .step i.three {
+      background: #209c9b; }
+  #steps .step h4 {
+    color: #292929;
+    padding: 0.5em 0; }
+  #steps .step p {
+    color: #333; }
