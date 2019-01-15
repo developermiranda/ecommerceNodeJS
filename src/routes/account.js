@@ -7,4 +7,12 @@ router.get('/', (req, res) => {
     layout: 'layouts/main'
   });
 })
+
+router.get('/new', (req, res) => {
+  return res.render('account/new', {
+    title: "Account - Register",
+    layout: 'layouts/main'
+  })
+})
+
 module.exports = router
