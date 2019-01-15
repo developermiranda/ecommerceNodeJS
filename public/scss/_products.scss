@@ -21,4 +21,29 @@
       }
     }
   }
+  .list_pro {
+    .product_item {
+      margin: 1.3em 0;
+      .preview {
+        position: relative;
+        img {
+          min-height: 13em;
+          max-height: 13em;
+        }
+      }
+      .info {
+          text-align: center;
+          border: 1px solid #ececec;
+          padding: 1em;
+          .price {
+            position: relative;
+            strong {
+              display: block;
+              padding: 1em 0;
+            }
+          }
+      }
+    }
+
+  }
 }

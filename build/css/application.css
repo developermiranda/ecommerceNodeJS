@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 .upper {
   text-transform: uppercase !important; }
 
+.block {
+  display: block; }
+
 .title {
   font-size: 1.5em; }
   .title.bold {
@@ -139,3 +142,19 @@ h1, h2, h3, h4, h5, h6 {
         #produtcs .cat .list-group .list-group-item a:hover, #produtcs .cat .list-group .list-group-item a:active {
           color: #ed283b;
           text-decoration: none; }
+  #produtcs .list_pro .product_item {
+    margin: 1.3em 0; }
+    #produtcs .list_pro .product_item .preview {
+      position: relative; }
+      #produtcs .list_pro .product_item .preview img {
+        min-height: 13em;
+        max-height: 13em; }
+    #produtcs .list_pro .product_item .info {
+      text-align: center;
+      border: 1px solid #ececec;
+      padding: 1em; }
+      #produtcs .list_pro .product_item .info .price {
+        position: relative; }
+        #produtcs .list_pro .product_item .info .price strong {
+          display: block;
+          padding: 1em 0; }
