@@ -21,5 +21,6 @@ router.get('/new', (req, res) => {
 })
 
 router.post('/', require('./../services/account/create'))
+router.get('/:name', require('./../services/account/show'))
 
 module.exports = router

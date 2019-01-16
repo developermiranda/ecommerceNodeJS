@@ -60,3 +60,4 @@ const Customer = new mongoose.Schema({
 
 Customer.plugin(passportLocalMongoose, { usernameField: 'email'})
 module.exports = mongoose.model('Customer', Customer)
+mongoose.Promise = global.Promise
