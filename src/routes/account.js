@@ -24,6 +24,7 @@ router.get('/new', (req, res) => {
 
 router.post('/', require('./../services/account/create'))
 router.post('/login', require('./../services/account/login'))
+router.get('/logout', require('./../services/account/logout'))
 router.get('/:name', require('./../services/account/show'))
 
 module.exports = router
