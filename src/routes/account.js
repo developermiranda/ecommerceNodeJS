@@ -6,7 +6,8 @@ const Customer = require('./../schemas/customer')
 router.get('/', (req, res) => {
   return res.render('account/index', {
     title: 'Account',
-    layout: 'layouts/main'
+    layout: 'layouts/main',
+    user: req.user || undefined
   });
 })
 
@@ -16,11 +17,13 @@ router.get('/new', (req, res) => {
   return res.render('account/new', {
     title: "Account - Register",
     customer: customer,
-    layout: 'layouts/main'
+    layout: 'layouts/main',
+    user: req.user || undefined
   })
 })
 
 router.post('/', require('./../services/account/create'))
+router.post('/login', require('./../services/account/login'))
 router.get('/:name', require('./../services/account/show'))
 
 module.exports = router

@@ -8,6 +8,7 @@ const passport = require('passport')
 const Customer = require('./../../schemas/customer')
 const LocalStrategy = require('passport-local').Strategy
 const mongoose = require('mongoose')
+const expressSession = require('express-session')
 
 
 module.exports = (app) => {
@@ -24,6 +25,13 @@ module.exports = (app) => {
   app.use(bodyParser.urlencoded({ extended: false}))
   app.use(morgan('dev'))
   app.use(methodOverride('_method'))
+  app.use(expressSession({
+    secret: 'OISMOs8j9S9d1w810~ç',
+    resave: false,
+    saveUninitialized: true
+  }))
+  app.use(passport.initialize())
+  app.use(passport.session())
 
   passport.use(new LocalStrategy(Customer.authenticate()))
   passport.serializeUser(Customer.serializeUser())
