@@ -8,7 +8,7 @@ module.exports = (req, res) => {
   let data = {
     name: req.body.name,
     email: req.body.email,
-    slug: 'slug',
+    slug: slug,
     birthday: {
       day: birthday[0],
       month:birthday[1],
